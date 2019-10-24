@@ -1,0 +1,364 @@
+/*
+default Color code: #00e5ff; 
+*/
+@import url('https://fonts.googleapis.com/css?family=Abel|Titillium+Web|Ubuntu|Share+Tech+Mono|Turret+Road&display=swap');  
+
+/*
+font-family: 'Abel', sans-serif;
+font-family: 'Titillium Web', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Share Tech Mono', monospace;
+*/
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+
+body{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow-x: hidden; /*overflow specifies what should happen if content overflows an element's box*/
+  z-index: -1;
+}
+
+/*-------------Navbar--------------*/
+.navbar li a{
+    font-size: 100%;
+    margin: auto 3vw;
+    font-weight: 550;
+    padding: 10px;
+    text-transform: uppercase;
+}
+.navbar li a:hover{
+    background-color: #333;
+    border-top: 2px solid #00e5ff;
+}
+.navbar{
+    border-bottom: 2px solid #333;
+}
+.collapse form input[type="search"]{
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8));
+    padding: 1vw;
+    margin: 0.3vw;
+    font-size:100%;
+    color: #00e5ff;
+}
+.collapse button{
+    border: 2px solid white;
+    color: white;
+    padding: 0.3vw;
+    font-size: 100%;
+}
+.collapse button:hover{
+    border: 2px solid #00e5ff;
+    background-color: #333;
+    color: white;
+}
+.navbar-brand{
+    font-weight: 550;
+    font-size: 1.4em;
+    font-family: 'Turret Road', cursive;
+}
+
+/*  ------------------header--------------- */
+#header h1{
+    font-weight: 600;
+    font-family: 'Share Tech Mono', monospace;
+    position: relative;
+    left: 10%;
+    margin: 5% auto;
+    z-index: 1;
+    font-size: 300%;
+    display: inline-block;
+}
+#header button[type="button"] a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 120%;
+    text-transform: uppercase;
+}
+
+#header button[type="button"]{
+    background: rgba(0, 0, 0, 0.4);
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    right: -30%;
+    border: 2px solid #00e5ff;
+    border-radius: 10px;
+    padding: 15px;
+    font-family: 'Titillium Web', sans-serif;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+    margin: auto;
+    margin-bottom: 50px;
+}
+#header button[type="button"]:hover{
+    background: rgba(0, 229, 255, 0.2);
+    border: 2px solid white;
+}
+#header h2 + .row{
+    margin-top: 1%;
+}
+#header h2{
+    position: relative;
+    margin: 20% 5%;
+}
+#header .col-md-6{
+    background: rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+#header .gallery-box{
+    padding: 2%;
+    margin: 13% auto;
+}
+
+#header .gallery-box img{
+    border-radius: 10px;
+}
+#header .gallery-box img:hover{
+    box-shadow: 1px 2px 4px #00e5ff;
+    transition: 0.3s;
+}
+#header .gallery-frame{
+    padding: 10px;
+}
+/* -----------description------------- */
+#description{
+    padding: 50px;
+}
+#description .details, .game-description{
+    padding: 20px;
+}
+#description .game-description-content, #description .description-content{
+    padding: 30px 20px;  
+    background: rgba(0, 0, 0, 0.3);
+}
+#header h2, #description h2, .trailer h2, .requirements-content h2, #categories h2{
+    font-size: 150%;
+    font-weight: 300;
+    margin-top: 20% 0;
+    display: inline;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #00e5ff;
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#header h2::after, #description h2::after, .trailer h2::after, .requirements-content h2::after{
+    content: '';
+    display: block; 
+    height: 1px;
+    width: 100%;
+    background: #323232;
+    margin: 5px;
+    bottom: -16px;
+}
+#description .buy{
+    padding: 3%;
+    margin-top: 70px;
+}
+/*----------right content----------*/
+#description .details .description-content p{
+    margin: 0.5em auto;
+    padding: 0.3em;
+    border-bottom: 1px solid #323232;
+}
+#description .details .description-content p:hover, .description-content li:hover, #requirements .requirements-content table tr:hover{
+    background: rgba(255, 255, 255, 0.3);
+    border-left: 2px solid #00e5ff;
+    transition: 0.5s;
+}
+#description .details .description-content span, #requirements .requirements-content table tr span{
+    color: antiquewhite;
+    font-family: 'Abel', sans-serif;
+}
+#description .description-content li{
+    list-style: none;
+    margin: 0.5em auto;
+    border-bottom: 1px solid #323232;
+    padding: 0.3em;
+}
+#description .description-content li img{
+    height: 1.7em;
+    width: auto;
+}
+
+/*----------------Trailer and Requirements----------*/
+#requirements{
+    padding-top: 5%;
+    padding: 30px;
+}
+#requirements .trailer, .requirements-content{
+    padding: 20px;
+}
+#requirements .trailer iframe{
+    width: 100%;
+    height: 500px;
+    margin: 30px 20px;
+}
+/*----------------requirements right content---------------*/
+#requirements .requirements-content table{
+    margin-top: 2em;
+    border-collapse: collapse;
+    background: rgba(0, 0, 0, 0.3);
+}
+#requirements .requirements-content table tr th{
+    font-size: 1em;
+    padding: 0.6em;
+    font-weight: 500;
+    text-align: left;
+}
+#requirements .requirements-content .first-row{
+   border-bottom: 2px solid #424242;
+   border-top: 2px solid #424242;
+}
+#requirements .requirements-content table .first-row:hover{
+    background: inherit;
+    border-left: none;
+}
+#requirements .requirements-content table tr td{
+    font-size: .8em;
+    padding: .5em;
+}
+
+/*--------------Pagination-----------------*/
+#pagination{
+    margin: 20px 20px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7);
+}
+#pagination button a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 120%;
+    font-weight: 550;
+    text-transform: uppercase;  
+    font-family: 'Titillium Web', sans-serif;
+
+}
+#pagination button{
+    background: rgba(0, 229, 255, 0.3);
+    padding: 10px;
+    position: relative;
+    margin: auto;
+    border-radius: 5px;
+    border: 1px solid white;
+    display: block;
+}
+#pagination button:hover{
+    background: rgba(0, 229, 255, 0.7);
+    border: 2px solid white;
+}
+
+/*-------------Copyright---------------*/
+#copyright{
+    padding: 10px;
+    text-align: center;
+}
+#copyright h3{
+    font-size: 80%;
+    color: #757575;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+/*---------------Categories----------------*/
+#categories{
+    margin: 3%;
+    padding: 3%;
+}
+#categories h1{
+    font-family: 'Titillium Web', sans-serif;
+    padding: 1%;
+    display: inline-block;
+    font-weight: 550;
+    letter-spacing: 1px;
+    border: 1px solid #00e5ff;
+    box-shadow: 2px 2px 2px #ffffff;
+    
+}
+#categories h1 + .container{
+    margin: 5% auto;
+}
+#categories .row .col-md-2 img{
+    max-width: 220px;
+    max-height: 100px;
+    padding: 2%;
+}
+#categories .full-category .row .col-md-2 img{
+    max-width: 220px;
+    max-height: 200px;
+    padding: 2%;
+    position: relative;
+    top: 20%;
+}
+#categories h2 + .col-md-12{
+    padding: 2%;
+    margin: 1%;
+    background: rgba(0,0,0, 0.6);
+}
+#categories .full-category .col-md-10{
+    padding: 5%;
+}
+#categories .col-md-8 .row, #categories .full-category .row{
+    margin: 2%;
+    padding: 2%;
+}
+#categories .col-md-8 .row:hover, #categories .full-category .row:hover{
+    background: linear-gradient(rgba(0,225,229,.3), rgba(0,0,0,.3));
+    box-shadow: 3px 3px 10px #00e5ff;
+    
+}
+#categories .col-md-8 .row a, #categories .full-category .row a{
+    text-decoration: none;
+    color: inherit;
+    float: left;
+    font-size: 140%;
+    padding: 1%;
+}
+#categories .col-md-4 img{
+    margin: 5%;
+    float: right;    
+}
+#categories .col-md-4 h4{
+    margin-top: 5%;
+    letter-spacing: 1px;
+    font-family: 'Titillium Web', sans-serif;
+    color: antiquewhite;
+}
+#categories .col-md-4 h4::after{
+    content: '';
+    display: block; 
+    height: 1px;
+    width: 100%;
+    background: #323232;
+    margin: 5px;
+    bottom: -16px;
+}
+#categories .view-more{
+    text-decoration: none;  
+    color: green;
+    font-size: 120%;
+    padding: 2%;
+}
+#categories .view-more:hover{
+    font-weight: 600;
+}
+#categories .col-md-8 .short-des, #categories .full-category .short-des{
+    padding: 2%;
+    font-size: 80%;
+    float: left;
+}
+#categories .col-md-8 .short-des a, #categories .full-category .short-des a{
+    font-size: inherit;
+    color: green;
+    float: none;
+}
