@@ -2,16 +2,12 @@
 default Color code: #00e5ff; 
 */
 @import url('https://fonts.googleapis.com/css?family=Abel|Titillium+Web|Ubuntu|Share+Tech+Mono|Turret+Road&display=swap');  
-
 /*
 font-family: 'Abel', sans-serif;
 font-family: 'Titillium Web', sans-serif;
 font-family: 'Ubuntu', sans-serif;
 font-family: 'Share Tech Mono', monospace;
 */
-
-
-
 *{
     margin: 0;
     padding: 0;
@@ -19,8 +15,6 @@ font-family: 'Share Tech Mono', monospace;
     color: white;
     font-family: 'Titillium Web', sans-serif;
 }
-
-
 body{
   background-repeat: no-repeat;
   background-size: cover;
@@ -29,7 +23,6 @@ body{
   overflow-x: hidden; /*overflow specifies what should happen if content overflows an element's box*/
   z-index: -1;
 }
-
 /*-------------Navbar--------------*/
 .navbar li a{
     font-size: 100%;
@@ -120,7 +113,6 @@ body{
     padding: 2%;
     margin: 13% auto;
 }
-
 #header .gallery-box img{
     border-radius: 10px;
 }
@@ -205,6 +197,8 @@ body{
     height: 500px;
     margin: 30px 20px;
 }
+
+
 /*----------------requirements right content---------------*/
 #requirements .requirements-content table{
     margin-top: 2em;
@@ -229,7 +223,6 @@ body{
     font-size: .8em;
     padding: .5em;
 }
-
 /*--------------Pagination-----------------*/
 #pagination{
     margin: 20px 20px;
@@ -263,6 +256,7 @@ body{
 #copyright{
     padding: 10px;
     text-align: center;
+    margin-top: 5%;
 }
 #copyright h3{
     font-size: 80%;
@@ -361,4 +355,99 @@ body{
     font-size: inherit;
     color: green;
     float: none;
+}
+#categories .col-md-8 .short-des a:hover, #categories .full-category .short-des a:hover{
+    font-weight: 600;
+}
+
+
+/*-----------------------Home---------------------*/
+#new, #top{
+    padding: 3%;
+}
+#new a, #top a{
+    text-decoration: none;
+}
+#new h3, #top h3{
+    display: block;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 3% auto;
+    font-size: 150%;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 0;
+
+}
+#new h3::after, #top h3::after{
+    content: '';
+    display: block; 
+    height: 1px;
+    width: 100%;
+    background: #757575;
+    margin: 5px;
+    bottom: -16px;
+}
+#new .col-md-3{
+    padding: 2%;
+    margin: 3% auto;
+}
+#new .game{
+    padding: 2%;
+    margin: 5% auto;
+    background: rgba(84, 110,122, 0.1);
+}
+#new .game:hover, #top .top-games:hover{
+    box-shadow: 3px 3px 7px #757575;
+    transition: .5s;
+}
+@media only screen and (min-width: 768px){
+        #new .streached{
+        margin: calc(30%) auto;
+    }
+}
+#new .game p, #top .game-info p{
+    padding: 2%;
+    font-family: 'Abel', sans-serif;
+    font-weight: 300;
+    margin-top: 2%;
+    margin-bottom: 0;
+    color: #f2f4f4;
+}
+#new .game span, #top .game-info span{
+    font-size: 80%;
+    padding: 1%;
+    color: #616161;
+    margin-top: 3%;
+}
+#new h3 + .row{
+    background: rgba(84, 110,122, 0.1);
+}
+#top .top-games{
+    margin: 3% auto;
+    padding: 2% auto;
+    background: rgba(84, 110,122, 0.1);
+}
+#top .game-banner{
+    padding: 6%;
+}
+#top .game-banner img{
+    max-height: 160px;
+    position: relative;
+}
+#top .featured{
+    margin: 5%;
+}
+#top .featured-banner:hover{
+    box-shadow: 3px 3px 7px #757575;
+    transition: .5s;    
+}
+#top .featured-banner img{
+    padding: 5%;
+    background: rgba(84, 110,122, 0.1);
+}
+#top .featured-middle img{
+    min-height: 140px;
+    margin: auto 1%;
 }
