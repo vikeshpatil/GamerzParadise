@@ -1,12 +1,13 @@
 /*
 default Color code: #00e5ff; 
 */
-@import url('https://fonts.googleapis.com/css?family=Abel|Titillium+Web|Ubuntu|Share+Tech+Mono|Turret+Road&display=swap');  
+@import url('https://fonts.googleapis.com/css?family=Abel|Titillium+Web|Ubuntu|Share+Tech+Mono|Turret+Road|Poiret+One&display=swap');  
 /*
 font-family: 'Abel', sans-serif;
 font-family: 'Titillium Web', sans-serif;
 font-family: 'Ubuntu', sans-serif;
 font-family: 'Share Tech Mono', monospace;
+font-family: 'Poiret One', cursive;
 */
 *{
     margin: 0;
@@ -34,6 +35,7 @@ body{
 .navbar li a:hover{
     background-color: #333;
     border-top: 2px solid #00e5ff;
+    transition: 0.2s;
 }
 .navbar{
     border-bottom: 2px solid #333;
@@ -55,6 +57,7 @@ body{
     border: 2px solid #00e5ff;
     background-color: #333;
     color: white;
+    transition: 0.2s;
 }
 .navbar-brand{
     font-weight: 550;
@@ -309,6 +312,7 @@ body{
 #categories .col-md-8 .row:hover, #categories .full-category .row:hover{
     background: linear-gradient(rgba(0,225,229,.3), rgba(0,0,0,.3));
     box-shadow: 3px 3px 10px #00e5ff;
+    transition: 0.5s;
     
 }
 #categories .col-md-8 .row a, #categories .full-category .row a{
@@ -368,26 +372,25 @@ body{
 #new a, #top a{
     text-decoration: none;
 }
-#new h3, #top h3{
-    display: block;
-    font-family: 'Ubuntu', sans-serif;
-    padding: 3% auto;
+#new h3, #top h3, #about h3, #dev h3{
     font-size: 150%;
-    font-weight: 400;
+    font-weight: 200;
+    margin-top: 20% 0;
+    display: inline;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #00e5ff;
     text-transform: uppercase;
     font-family: 'Ubuntu', sans-serif;
-    margin-top: 30px;
-    margin-bottom: 0;
-
+    letter-spacing: 1px;
 }
-#new h3::after, #top h3::after{
+#new h3::after, #top h3::after, #about h3::after, #dev h3::after{
     content: '';
     display: block; 
     height: 1px;
     width: 100%;
     background: #757575;
     margin: 5px;
-    bottom: -16px;
+    bottom: -17px;
 }
 #new .col-md-3{
     padding: 2%;
@@ -450,4 +453,100 @@ body{
 #top .featured-middle img{
     min-height: 140px;
     margin: auto 1%;
+}
+
+
+/*---------------------About-------------------*/
+#about{
+    margin: 5% 2%;
+    padding: 1%;
+}
+#about span{
+    font-size: 100%;
+    font-weight: 100;
+    text-transform: capitalize;
+    font-family: 'Turret Road', cursive;
+}
+#about .header {
+    text-align: center;
+    margin: 5%;
+}
+#about .header h6{
+    font-weight: 550;
+    padding: 4% 4% 2% 4%;
+    font-size: 240%;
+    font-family: 'Poiret One', cursive;
+    letter-spacing: 1px;
+}
+#about .header p{
+    font-family: 'Poiret One', cursive;
+    letter-spacing: 1px;
+    font-size: 120%;
+}
+#about .details{
+    margin-top: 8%;
+}
+#about .details h4{
+    font-family: 'Abel', sans-serif;
+    margin-top: 2%;
+    font-weight: lighter;
+    font-size: 180%;
+    color: rgba(132,225,225,0.9);
+}
+#about .details .details-box{
+    margin: 5% 3%;
+    padding: 3%;
+    background: rgba(216, 191, 197, 0.2);
+}
+#about .details .details-box h5{
+    color: rgba(132,225,225,0.9);
+    font-family: 'Abel', sans-serif;
+    font-size: 140%;
+    margin: 2% auto;
+    letter-spacing: 1px;
+}
+#dev {
+    margin: 5% 2%;
+    margin-bottom: 1%;
+    padding: 2%;
+    padding-bottom: 1%;
+}
+#dev .dev-info{
+    padding: 4%;
+    margin: 3%;
+    background: rgba(216, 191, 197, 0.2);
+}
+#dev .dev-info h5{
+    font-size: 140%;
+    padding: 1%;
+    font-family: 'Abel', sans-serif;
+}
+#dev .dev-info p{
+    margin-left: 10%;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 50;
+    color: rgba(255,255,255, 0.85);
+}
+.fa-search{
+    font-weight: 100;
+    font-size: 360%;
+    padding: 2%;
+    background: linear-gradient(rgba(0,225,225,0.2), rgba(40,225,225,0.2));
+    border-radius: 50%;
+}
+.fa-facebook-square, .fa-linkedin, .fa-twitter, .fa-github, .fa-instagram{
+    font-size: 150%;
+    margin: 2% 5%;
+}
+.fa-envelope, .fa-mobile-alt{
+    font-size: 120%;
+    margin: 0 2%;
+}
+.fa-heart, .fa-gem, .fa-trophy{
+    padding: 5%;
+    border-radius: 50%;
+    font-size: 300%;
+    color: red;
+    background: linear-gradient(rgba(0,225,225,0.2), rgba(40,225,225,0.2));
 }
