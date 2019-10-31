@@ -1,4 +1,18 @@
 /*
+<div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+            
+            </div>
+            <div class="col-md-4">
+            
+            </div>
+        </div> 
+       </div>
+*/
+
+
+/*
 default Color code: #00e5ff; 
 */
 @import url('https://fonts.googleapis.com/css?family=Abel|Titillium+Web|Ubuntu|Share+Tech+Mono|Turret+Road|Poiret+One&display=swap');
@@ -98,15 +112,14 @@ body {
     background: rgba(0, 0, 0, 0.4);
     display: inline-block;
     position: relative;
+    margin: calc(10%) auto;
     z-index: 1;
     right: -30%;
     border: 2px solid #00e5ff;
     border-radius: 10px;
     padding: 15px;
     font-family: 'Titillium Web', sans-serif;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
-    margin: auto;
-    margin-bottom: 50px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);    
 }
 
 #header button[type="button"]:hover {
@@ -150,6 +163,7 @@ body {
 /* -----------description------------- */
 #description {
     padding: 50px;
+    z-index: 1;
 }
 
 #description .details,
@@ -234,6 +248,7 @@ body {
 #requirements {
     padding-top: 5%;
     padding: 30px;
+    z-index: 1;
 }
 
 #requirements .trailer,
@@ -513,7 +528,7 @@ body {
 
 @media only screen and (min-width: 768px) {
     #new .streached {
-        margin: calc(30%) auto;
+        margin: calc(20%) auto;
     }
 }
 
