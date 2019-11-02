@@ -1,4 +1,5 @@
 <html>
+
 <head>
     <title>GamerzParadise | Shadow of the Tomb Raider</title>
     <link type="text/css" href="../../css/style.css" rel="stylesheet">
@@ -43,8 +44,18 @@
     <section id="header" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../img/Adventure/shadow_of_the_tomb_raider/header.jpg); background-attachment: fixed;
   background-size:cover; background-repeat: no-repeat; overflow-x: hidden; z-index: 1; background-position:center;">
         <div class="container-fluid">
-            <h1>Shadow of the Tomb Raider</h1>
-            <button type="button"><a href="#buy">Shop Now</a></button>
+            <div class="row">
+                <div class="col-md-8">
+                    <h1>Shadow of the Tomb Raider</h1>
+
+                </div>
+                <div class="col-md-4">
+                    <button type="button"><a href="#buy">Shop Now</a></button>
+
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
             <div class="gallery">
                 <h2>Screenshots</h2>
                 <div class="row">
@@ -244,6 +255,9 @@
         $("button[type='submit']").on("click", function() {
             $(this).css(style);
         });
+
     </script>
     <script src="../../js/bootstrap.min.js"></script>
-</body></html>
+</body>
+
+</html>
