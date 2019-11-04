@@ -119,7 +119,7 @@ body {
     border-radius: 10px;
     padding: 15px;
     font-family: 'Titillium Web', sans-serif;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);    
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
 }
 
 #header button[type="button"]:hover {
@@ -236,7 +236,7 @@ body {
     margin: 0.5em auto;
     border-bottom: 1px solid #323232;
     padding: 0.3em;
-    min-width: 320px;
+    min-width: 280px;
 }
 
 #description .description-content li img {
@@ -349,29 +349,22 @@ body {
     letter-spacing: 1px;
     border: 1px solid #00e5ff;
     box-shadow: 2px 2px 2px #ffffff;
-
 }
 
 #categories h1 + .container {
     margin: 5% auto;
 }
 
-#categories .col-md-2 .img-fluid {
-    min-height: 120px;
-}
-
 #categories .row .col-md-2 img {
-    max-width: 220px;
-    max-height: 100px;
     padding: 2%;
+    position: relative;
 }
 
 #categories .full-category .row .col-md-2 img {
-    max-width: 220px;
-    max-height: 200px;
+    max-width: 100%;
+    max-height: 100%;
     padding: 2%;
     position: relative;
-    top: 20%;
 }
 
 #categories h2 + .col-md-12 {
@@ -403,7 +396,6 @@ body {
 #categories .full-category .row a {
     text-decoration: none;
     color: inherit;
-    float: left;
     font-size: 140%;
     padding: 1%;
 }
@@ -415,7 +407,6 @@ body {
 
 #categories .col-md-4 img {
     margin: 5%;
-    float: right;
 }
 
 #categories .col-md-4 h4 {
@@ -448,9 +439,8 @@ body {
 
 #categories .col-md-8 .short-des,
 #categories .full-category .short-des {
-    padding: 2%;
+    padding: 3%;
     font-size: 80%;
-    float: left;
 }
 
 #categories .col-md-8 .short-des a,
@@ -465,6 +455,14 @@ body {
     font-weight: 600;
 }
 
+#categories .col-md-2 {
+    margin: 20px auto;
+}
+
+#categories .col-md-2 + .col-md-10 {
+    padding: 5% auto;
+    margin: auto auto;
+}
 
 /*-----------------------Home---------------------*/
 #new,
@@ -758,11 +756,13 @@ body {
     margin: 2% auto;
     color: #00e5ff;
 }
-#faq .que .more a{
+
+#faq .que .more a {
     text-decoration: none;
     color: inherit;
     font-size: 120%;
 }
+
 #faq .que .more button {
     background: rgba(0, 229, 255, 0.3);
     padding: 10px 15px;
@@ -770,7 +770,7 @@ body {
     border-radius: 5px;
     border: 1px solid white;
     display: inline-block;
-    
+
 }
 
 #faq .que .more button:hover {
