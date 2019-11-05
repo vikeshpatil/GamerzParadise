@@ -1,22 +1,13 @@
 /*
-<div class="container-fluid">
-        <div class="row">
-            <div class="col-md-8">
-            
-            </div>
-            <div class="col-md-4">
-            
-            </div>
-        </div> 
-       </div>
-*/
-
-
-/*
 default Color code: #00e5ff; 
 */
 @import url('https://fonts.googleapis.com/css?family=Abel|Titillium+Web|Ubuntu|Share+Tech+Mono|Turret+Road|Poiret+One&display=swap');
-
+@import url('../fonts/Abel.ttf');
+@import url('../fonts/PoiretOne.ttf');
+@import url('../fonts/ShareTechMono.ttf');
+@import url('../fonts/TitilliumWeb.ttf');
+@import url('../fonts/TurretRoad.ttf');
+@import url('../fonts/Ubuntu.ttf');
 /*
 font-family: 'Abel', sans-serif;
 font-family: 'Titillium Web', sans-serif;
