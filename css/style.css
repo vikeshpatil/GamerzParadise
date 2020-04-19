@@ -1,13 +1,22 @@
 /*
+<div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+            
+            </div>
+            <div class="col-md-4">
+            
+            </div>
+        </div> 
+       </div>
+*/
+
+
+/*
 default Color code: #00e5ff; 
 */
 @import url('https://fonts.googleapis.com/css?family=Abel|Titillium+Web|Ubuntu|Share+Tech+Mono|Turret+Road|Poiret+One&display=swap');
-@import url('../fonts/Abel.ttf');
-@import url('../fonts/PoiretOne.ttf');
-@import url('../fonts/ShareTechMono.ttf');
-@import url('../fonts/TitilliumWeb.ttf');
-@import url('../fonts/TurretRoad.ttf');
-@import url('../fonts/Ubuntu.ttf');
+
 /*
 font-family: 'Abel', sans-serif;
 font-family: 'Titillium Web', sans-serif;
@@ -85,7 +94,7 @@ body {
     font-weight: 600;
     font-family: 'Share Tech Mono', monospace;
     position: relative;
-    left: 10%;
+    left: 5%;
     margin: 5% auto;
     z-index: 1;
     font-size: 300%;
@@ -102,13 +111,14 @@ body {
 #header button[type="button"] {
     background: rgba(0, 0, 0, 0.4);
     display: inline-block;
+    margin: 5% 10%;
     position: relative;
-    margin: calc(10%) auto;
+    /*    margin: calc(10%) auto;*/
     z-index: 1;
-    right: -30%;
+    /*    right: -30%;*/
     border: 2px solid #00e5ff;
     border-radius: 10px;
-    padding: 15px;
+    padding: 10px;
     font-family: 'Titillium Web', sans-serif;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
 }
@@ -175,7 +185,7 @@ body {
 #categories h2 {
     font-size: 150%;
     font-weight: 300;
-    margin-top: 20% 0;
+    margin-top: 10%;
     display: inline;
     padding-bottom: 5px;
     border-bottom: 1px solid #00e5ff;
@@ -206,6 +216,7 @@ body {
     margin: 0.5em auto;
     padding: 0.3em;
     border-bottom: 1px solid #323232;
+    min-width: 360px;
 }
 
 #description .details .description-content p:hover,
@@ -227,7 +238,7 @@ body {
     margin: 0.5em auto;
     border-bottom: 1px solid #323232;
     padding: 0.3em;
-    min-width: 280px;
+    min-width: 360px;
 }
 
 #description .description-content li img {
@@ -340,20 +351,28 @@ body {
     letter-spacing: 1px;
     border: 1px solid #00e5ff;
     box-shadow: 2px 2px 2px #ffffff;
+
 }
 
+/*
 #categories h1 + .container {
-    margin: 5% auto;
+    margin: 5% auto!important;
+}
+*/
+
+#categories .col-md-2 .img-fluid {
+    min-height: 120px;
 }
 
 #categories .row .col-md-2 img {
+    max-width: 220px;
+    max-height: 100px;
     padding: 2%;
-    position: relative;
 }
 
 #categories .full-category .row .col-md-2 img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 220px;
+    max-height: 200px;
     padding: 2%;
     position: relative;
 }
@@ -365,13 +384,13 @@ body {
 }
 
 #categories .full-category .col-md-10 {
-    padding: 5%;
+    padding: 2%;
 }
 
 #categories .col-md-8 .row,
 #categories .full-category .row {
     margin: 2%;
-    padding: 1% 2% 2% 2%;
+    padding: 1% 1% 1% 1%;
     border: 1px solid #333;
 }
 
@@ -387,6 +406,7 @@ body {
 #categories .full-category .row a {
     text-decoration: none;
     color: inherit;
+    float: left;
     font-size: 140%;
     padding: 1%;
 }
@@ -398,6 +418,7 @@ body {
 
 #categories .col-md-4 img {
     margin: 5%;
+    float: right;
 }
 
 #categories .col-md-4 h4 {
@@ -430,8 +451,9 @@ body {
 
 #categories .col-md-8 .short-des,
 #categories .full-category .short-des {
-    padding: 3%;
+    padding: 2%;
     font-size: 80%;
+    float: left;
 }
 
 #categories .col-md-8 .short-des a,
@@ -446,14 +468,6 @@ body {
     font-weight: 600;
 }
 
-#categories .col-md-2 {
-    margin: 20px auto;
-}
-
-#categories .col-md-2 + .col-md-10 {
-    padding: 5% auto;
-    margin: auto auto;
-}
 
 /*-----------------------Home---------------------*/
 #new,
@@ -474,7 +488,7 @@ body {
 #contact h3 {
     font-size: 150%;
     font-weight: 200;
-    margin-top: 20% 0;
+    margin-top: 20%;
     display: inline;
     padding-bottom: 7px;
     border-bottom: 1px solid #00e5ff;
@@ -573,7 +587,7 @@ body {
 }
 
 #top .featured-middle img {
-    min-height: 140px;
+    /*    min-height: 140px;*/
     margin: auto 1%;
 }
 
@@ -810,4 +824,314 @@ body {
 #contact button[type="reset"] {
     margin-right: auto;
     margin-left: 1%;
+}
+
+
+
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+
+@media only screen and (max-width: 770px) {
+    * {
+        font-size: 16px;
+    }
+
+    #new h3,
+    #top h3,
+    #about h3,
+    #dev h3,
+    #faq h3,
+    #contact h3 {
+        font-size: 150%;
+    }
+
+    #header h2,
+    #description h2,
+    .trailer h2,
+    .requirements-content h2,
+    #categories h2 {
+        font-size: 150%;
+        margin-top: 10%;
+    }
+
+    /*   -------------- navbar----------*/
+    .collapse button {
+        padding: 5px;
+        font-size: 90%;
+    }
+
+
+    /*------------------Home---------------------*/
+    #new .col-md-3 {
+        padding: 2%;
+        margin: 0;
+    }
+
+    #new .game {
+        padding: 2%;
+        margin: 2%;
+    }
+
+    #new .game p,
+    #top .game-info p {
+        font-size: 130%;
+    }
+
+
+    #top .game-banner img {
+        max-height: 160px;
+    }
+
+    #top .game-banner {
+        padding: 2%;
+    }
+
+    #top .top-games {
+        margin: 2%;
+        padding: 2%;
+    }
+
+    #top .featured {
+        margin: 3%;
+        padding: 2%;
+    }
+
+    #top .featured-banner img {
+        padding: 2%;
+    }
+
+    #top .featured-middle img {
+        margin: 0%;
+    }
+
+    /*---------------Categories----------------*/
+    #categories {
+        margin: 2%;
+        padding: 2%;
+    }
+
+    #categories h1 {
+        padding: 3%;
+        font-size: 140%;
+    }
+
+    #categories h2 + .col-md-12 {
+        padding: 1%;
+        margin: 1%;
+    }
+
+    #categories .col-md-8 .row,
+    #categories .full-category .row {
+        margin: 1%;
+        padding: 1% 1% 1% 1%;
+    }
+
+    #categories .col-md-8 .row a,
+    #categories .full-category .row a {
+        font-size: 120%;
+    }
+
+    #categories .col-md-4 img {
+        margin: 3% 0;
+        padding: 1%;
+    }
+
+    #categories .col-md-4 h4 {
+        margin-top: 7%;
+    }
+
+    #categories .col-md-8 .short-des a,
+    #categories .full-category .short-des a {
+        font-size: inherit;
+        color: green;
+        float: none;
+    }
+
+    #categories span {
+        margin-top: 10%;
+    }
+
+    #categories .full-category .row .col-md-2 img {
+        padding: 2%;
+        margin: 1%;
+    }
+
+    /*    -------------Contact-----------------*/
+    #contact button {
+        padding: 10px 15px;
+        font-size: 100%;
+    }
+
+    #contact .form-group input,
+    #contact .form-group textarea {
+        margin-top: 20px;
+    }
+
+    #contact button[type="submit"] {
+        margin-right: 5%;
+    }
+
+    #contact button[type="reset"] {
+        margin-left: 5%;
+    }
+
+    #contact .form-group input::placeholder,
+    #contact .form-group textarea::placeholder {
+        font-size: 90%;
+        font-weight: lighter;
+    }
+
+
+    /*   ----------------About---------------- */
+    #about .header p {
+        font-size: 100%;
+    }
+
+    #about .header h6 {
+        font-size: 180%;
+    }
+
+    #about details h4 {
+        margin-top: 2%;
+        font-size: 150%;
+    }
+
+    #about .details .details-box h5 {
+        font-size: 120%;
+    }
+
+    #dev .dev-info p span {
+        letter-spacing: 0.5px;
+        font-size: 90%;
+    }
+
+    .fa-search {
+        padding: 5%;
+    }
+
+    /*---------------FAQ----------------*/
+
+    #faq .que summary {
+        font-size: 110%;
+    }
+
+    #faq .que p {
+        padding-left: 5%;
+        word-spacing: 1px;
+        font-size: 80%;
+    }
+
+    #faq .que .more {
+        font-size: 80%;
+    }
+
+    #faq .que .more a {
+        font-size: 100%;
+    }
+
+    #faq .que .more button {
+        padding: 8px 10px;
+        display: flex;
+    }
+
+    /* -----------description------------- */
+    #description {
+        padding: 5px;
+    }
+
+    #description .details,
+    #description .game-description {
+        padding: 5px;
+        margin-top: 5%;
+    }
+
+    #description .game-description-content,
+    #description .description-content {
+        padding: 15px 10px;
+    }
+
+    #description .buy {
+        padding: 2%;
+        margin-top: 30px;
+    }
+
+    /*----------right content----------*/
+    #description .details .description-content p {
+        margin: 0.1em auto;
+        padding: 0.2em;
+    }
+
+    #description .description-content li {
+        margin: 0.3em auto;
+        padding: 0.2em;
+    }
+
+    /*----------------Trailer and Requirements----------*/
+    #requirements {
+        padding: 5% 5px;
+    }
+
+    #requirements .trailer,
+    .requirements-content {
+        padding: 5px;
+        margin-top: 5%;
+    }
+
+    #requirements .trailer iframe {
+        width: 100%;
+        height: auto;
+        margin: 10px 5px;
+    }
+
+
+    /*----------------requirements right content---------------*/
+    #requirements .requirements-content table {
+        margin-top: 1.5em;
+    }
+
+    #requirements .requirements-content table tr th {
+        font-size: 1.2em;
+        padding: 0.4em;
+    }
+
+    #requirements .requirements-content table tr td {
+        font-size: 1em;
+        padding: .4em;
+    }
+
+    /*--------------Pagination-----------------*/
+    #pagination {
+        margin: 10px 20px;
+        padding: 5px;
+    }
+
+    #pagination button a {
+        font-size: 110%;
+    }
+
+    /*  ------------------header--------------- */
+    #header h1 {
+        left: 0;
+        font-size: 200%;
+    }
+
+    #header button[type="button"] a {
+        font-size: 100%;
+    }
+
+    #header button[type="button"] {
+        margin: 5% 10%;
+        /*        right: 0;*/
+        padding: 8px;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
+    }
+
+    #header .gallery-box {
+        margin: 3% auto;
+    }
+
+    #header .gallery-frame {
+        display: none;
+    }
+
 }
